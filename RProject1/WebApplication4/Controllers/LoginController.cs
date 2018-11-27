@@ -87,8 +87,15 @@ namespace WebApplication4.Controllers
                         contrasena = nuevoUsuario.contrasena,
                         //tipo_atractivo = _db.tipo_atractivo.Where(x=>x.id_Tipo_atractivo.Equals(nuevoUsuario.gustos)).ToList()                          
                     };
-                    
-                   
+
+                    List<tipo_atractivo> list = new List<tipo_atractivo>();
+                    foreach(int y in nuevoUsuario.gustos)
+                    {
+                        list.Add(_db.tipo_atractivo.Where(x => x.id_Tipo_atractivo.Equals(y)).FirstOrDefault());
+                    }
+
+                    nuevo.tipo_atractivo = list;
+
                     _db.usuario.Add(nuevo);
                     _db.SaveChanges();
 
