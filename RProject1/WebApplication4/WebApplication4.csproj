@@ -273,6 +273,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Conexion\Conexion.cs" />
+    <Compile Include="Controllers\ActualizarController.cs" />
     <Compile Include="Controllers\EvaluacionController.cs" />
     <Compile Include="Controllers\ExtraccionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -283,6 +284,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ActualizarRequest.cs" />
+    <Compile Include="Models\atractivoDetalles.cs" />
     <Compile Include="Models\DetallesRequest.cs" />
     <Compile Include="Models\DetallesRespuesta.cs" />
     <Compile Include="Models\Evaluaciones.cs" />
@@ -378,6 +381,34 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Imagenes\PuebloMagico10\" />
+    <Folder Include="Imagenes\PuebloMagico11\" />
+    <Folder Include="Imagenes\PuebloMagico12\" />
+    <Folder Include="Imagenes\PuebloMagico13\" />
+    <Folder Include="Imagenes\PuebloMagico14\" />
+    <Folder Include="Imagenes\PuebloMagico15\" />
+    <Folder Include="Imagenes\PuebloMagico16\" />
+    <Folder Include="Imagenes\PuebloMagico17\" />
+    <Folder Include="Imagenes\PuebloMagico18\" />
+    <Folder Include="Imagenes\PuebloMagico19\" />
+    <Folder Include="Imagenes\PuebloMagico1\" />
+    <Folder Include="Imagenes\PuebloMagico20\" />
+    <Folder Include="Imagenes\PuebloMagico21\" />
+    <Folder Include="Imagenes\PuebloMagico22\" />
+    <Folder Include="Imagenes\PuebloMagico23\" />
+    <Folder Include="Imagenes\PuebloMagico24\" />
+    <Folder Include="Imagenes\PuebloMagico25\" />
+    <Folder Include="Imagenes\PuebloMagico26\" />
+    <Folder Include="Imagenes\PuebloMagico27\" />
+    <Folder Include="Imagenes\PuebloMagico28\" />
+    <Folder Include="Imagenes\PuebloMagico2\" />
+    <Folder Include="Imagenes\PuebloMagico3\" />
+    <Folder Include="Imagenes\PuebloMagico4\" />
+    <Folder Include="Imagenes\PuebloMagico5\" />
+    <Folder Include="Imagenes\PuebloMagico6\" />
+    <Folder Include="Imagenes\PuebloMagico7\" />
+    <Folder Include="Imagenes\PuebloMagico8\" />
+    <Folder Include="Imagenes\PuebloMagico9\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

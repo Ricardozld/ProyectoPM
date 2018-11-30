@@ -23,14 +23,28 @@ namespace WebApplication4.Controllers
                 DetallesRespuesta response = _db.pueblo_magico.Where(x => x.id_Pueblo_magico.Equals(request.idPuebloMagico))
                     .Select(x => new DetallesRespuesta
                     {
+                        status = 200,
+                        mensaje = "Pueblo Mágico encontrado",
                         nombre = x.nombre,
                         descripcion = x.descripcion,
                         latitud = x.latitud,
-                        longitud = x.longitud
+                        longitud = x.longitud,
+                        
                         //fotos = x.foto
                     }).FirstOrDefault();
                 response.fotos = _db.fotos.Where(x => x.id_Pueblo_magico.Equals(request.idPuebloMagico)).Select(x => x.foto).ToList();
-                response.atractivos = _db.atractivo.Where(x => x.id_Pueblo_magico.Equals(request.idPuebloMagico)).ToList();
+                response.atractivos = _db.atractivo.Where(x => x.id_Pueblo_magico.Equals(request.idPuebloMagico)).Select(x => new atractivoDetalles
+                {
+                    idAtractivo = x.id_Atractivo,
+                    //categoria = _db.categoria.Select(y => y.tipo_atractivo.Where(w => w.id_Tipo_atractivo.Equals(x.id_Tipo_atractivo)).FirstOrDefault()).Select(y => y.id_Categoria).FirstOrDefault(),
+                    categoria = _db.tipo_atractivo.Where(y=> y.id_Tipo_atractivo.Equals(x.id_Atractivo)).Select(y=>y.id_Categoria).FirstOrDefault(),
+                    descripcion = x.descripcion,
+                    foto = x.foto,
+                    latitud = x.latitud,
+                    longitud = x.longitud,
+                    nombre = x.nombre
+                    
+                }).ToList();
 
                 return response;
             }

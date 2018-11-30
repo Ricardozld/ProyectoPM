@@ -4,34 +4,31 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="381f7b3c95a14f669a953ac365aba6b9" Name="Diagram1">
-        <EntityTypeShape EntityType="sistemarecomendacionModel.atractivo" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+      <Diagram DiagramId="16e90c19e19346109110384f64f95bcd" Name="Diagram1">
+        <EntityTypeShape EntityType="sistemarecomendacionModel.atractivo" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="sistemarecomendacionModel.atractivo_has_criterios_evaluacion" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.calificacion" Width="1.5" PointX="9.75" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.categoria" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.criterios_evaluacion" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.entidad_federativa" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.historial_visitas" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.pueblo_magico" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.tipo_atractivo" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.usuario" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.calificacion" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.categoria" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.criterios_evaluacion" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.entidad_federativa" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.fotos" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.historial_visitas" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.hstorial_atractivos" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.pueblo_magico" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.tipo_atractivo" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemarecomendacionModel.usuario" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Atractivo_has_Criterios_evaluacion_Atractivo1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Atractivo_Pueblo_magico1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Atractivo_Tipo_atractivo1" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemarecomendacionModel.fk_historial_atractivos_Atractivo1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Atractivo_has_Criterios_evaluacion_Criterios_evaluacion1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Calificacion_Atractivo_has_Criterios_evaluacion1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Calificacion_Historial_visitas1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Tipo_atractivo_Categoria1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Pueblo_magico_Entidad_federativa" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemarecomendacionModel.fk_Fotos_Pueblo_magico1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.fk_Pueblo_magico_has_Usuario_Pueblo_magico1" ManuallyRouted="false" />
-        <AssociationConnector Association="sistemarecomendacionModel.fk_Pueblo_magico_has_Usuario_Usuario1" ManuallyRouted="false" />
         <AssociationConnector Association="sistemarecomendacionModel.preferencias_usuario" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.hstorial_atractivos" Width="1.5" PointX="10.5" PointY="3.75" />
-        <AssociationConnector Association="sistemarecomendacionModel.fk_historial_atractivos_Atractivo1" />
-        <AssociationConnector Association="sistemarecomendacionModel.fk_historial_Atractivos_Usuario1" />
-        <EntityTypeShape EntityType="sistemarecomendacionModel.fotos" Width="1.5" PointX="7.5" PointY="1.75" />
-        <AssociationConnector Association="sistemarecomendacionModel.fk_Fotos_Pueblo_magico1" />
-        <AssociationConnector Association="sistemarecomendacionModel.fk_Fotos_Usuario1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
